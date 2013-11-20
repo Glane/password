@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Javascript Bare</title>
+</head>
+<body>
+
+<script type="text/javascript">
+ 
+
+// var addFive = function(x){
+// 	return x + 5;
+// };
+
+
+// console.log("addFive(3) should be 8:", addFive(3));
+// console.log("addFive(6) should be 11:", addFive(6));
+
+
+// step 11
+// var x = prompt(" GIMMIE ONE ");
+// var y = prompt("  GIMMIE TWO ");
+// var z = prompt("  GIMMIE THREE ");
+
+// alert(z+y+x);
+
+
+var password = "ruby";
+var counter = 0;
+var guess = prompt("what is your password?");
+
+// var guess = function(){
+// 	counter = counter + 1;
+// };
+var run = function(){
+	if (counter != 3){
+		counter += 1;
+		if (guess === password){
+			alert("welcome!");
+		} else {
+			alert("wrong !!");
+			guess = prompt("please try again");
+			run();
+		}
+	}
+};
+
+run();
+
+
+</script>
+
+</body>
+</html>
